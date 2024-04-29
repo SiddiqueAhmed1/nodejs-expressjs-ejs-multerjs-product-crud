@@ -1,0 +1,26 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+h1 {
+  font-size: 100px;
+  color: red;
+  margin-top: 50px;
+}
+p {
+  font-size: 40px;
+}
+
+ul li a{
+  text-decoration: none !important;
+  color: white !important; 
+}
+.bg-yellowish{ 
+  background-color: rgba(124, 223, 157, 0.781);
+}

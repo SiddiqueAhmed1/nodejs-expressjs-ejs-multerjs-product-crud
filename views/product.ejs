@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row justify-content-center mt-5 ">
+        <div class="col-lg-8">
+            <a href="/createProduct" class="btn btn-sm btn-info mb-2 ">Add new product</a>
+            <div class="card">
+                <div class="card-header text-center ">
+                    <h3>All Product</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped ">
+                        <thead>
+                            <th>#</th>
+                            <th>Photo</th>
+                            <th>Name</th>
+                            <th>Regular Price</th>
+                            <th>Sale Price</th>
+                            <th>Stock</th>
+                            <th>
+                                Action
+                            </th>
+                        </thead>
+                        <div class="tbody">
+                            <% product.forEach((item, index ) => { %>
+                                <tr class="align-middle">
+                                    <td><%= index + 1 %></td>
+                                    <td>
+                                        <img style="width: 50px;height: 50px; object-fit: cover; border-radius: 50%;" src="product/<%= item.photo %>" alt="">
+                                    </td>
+                                    <td><%= item.name %></td>
+                                    
+                                    <td><%= item.regularPrice %></td>
+                                    <td><%= item.salePrice %></td>
+                                    <td><%= item.stock %></td>
+                                    <td>
+                                        <a href="/singleProduct/<%= item.slug %>
+                                            "><i class="fa fa-eye btn btn-sm btn-primary "></i></a>
+                                        <a href="/editProductPage/<%= item.id %>"><i class="fa fa-edit btn btn-sm btn-warning  "></i></a>
+                                        <a href="/<%= item.id %>"><i class="fa fa-trash btn btn-sm btn-danger  "></i></a>
+                                    </td>
+                                </tr>
+                                <% }) %>
+
+                        </div>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

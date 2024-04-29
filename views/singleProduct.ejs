@@ -1,0 +1,72 @@
+<div class="container mb-5 ">
+    <div class="row justify-content-center mt-3 ">
+        <div class="col-lg-8">
+            <a href="/" class="btn btn-sm btn-warning mb-2 ">Back</a>
+            <div class="card shadow ">
+
+                <div class="card-body">
+                    <div class="card-header text-end ">
+                        <h5>Product View</h5>
+                    </div>
+                    <div class="row p-5 justify-content-center ">
+                        <div class="col-lg-5  ">
+                            <img style="width: 100%; height: 380px;object-fit: cover;"
+                                src="/product/<%= product.photo %>" alt="">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img style="height: 60px" class="w-100 border-1  mt-3 object-fit-cover " src="/product/<%= product.photo %>" alt="">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img style="height: 60px" class="w-100 border-1  mt-3 object-fit-cover " src="/product/<%= product.photo %>" alt="">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img style="height: 60px" class="w-100 border-1  mt-3 object-fit-cover " src="/product/<%= product.photo %>" alt="">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img style="height: 60px" class="w-100 border-1  mt-3 object-fit-cover " src="/product/<%= product.photo %>" alt="">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <h5>
+                                <%= product.name %>
+                            </h5>
+                            <h4 style="color: rgb(192, 192, 34);">$<%= product.salePrice %>.00 <span
+                                        style="font-size: 14px;text-decoration: line-through;">
+                                        <%= product.regularPrice %>.00
+                                    </span></h4>
+                            <i style="color: red; font-size: 12px;" class="fa fa-star"></i>
+                            <i style="color: red; font-size: 12px;" class="fa fa-star"></i>
+                            <i style="color: red; font-size: 12px;" class="fa fa-star"></i>
+                            <i style="color: red; font-size: 12px;" class="fa fa-star">
+                                <span style="font-size: 10px; color: #a5a5a5;">(2 Reviews)</span></i>
+                            <select style="padding: 6px 15px;" class="d-block mt-3 border-2 " name="" id="">
+                                <option value="">Select Size</option>
+                                <option value="Big">Big</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Small">Small</option>
+                            </select>
+                            <input type="number" value="2" class="form-control w-25 d-inline-block  mt-3 ">
+                            <button style="padding: 8px 16px; color: white;font-size: 13px; border: none; border-radius: 0%;" class="btn btn-sm btn-info  ">Add to cart</button>
+                            <hr>
+                            <i style="font-size: 10px; color: #4d4d4d   ; margin-right: 20px;" class="fa fa-heart">Add to wishlist</i>
+                            <i style="font-size: 10px; color: #4d4d4d;" class="fa fa-share">Share </i>
+                            <hr>
+                            <div class="category">
+                                <h6>Category</h6>
+                                <p style="font-size: 12px; margin-top: 0;">Seasonal vagetable</p>
+                            </div>
+                            <div class="tags">
+                                <h6>Tags</h6>
+                                <p style="font-size: 12px; margin-top: 0;">Company name</p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

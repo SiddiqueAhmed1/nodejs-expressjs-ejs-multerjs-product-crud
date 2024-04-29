@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="row justify-content-center mt-3">
+        <div class="col-lg-6">
+            <a href="/" class="btn btn-sm btn-warning  mb-2 ">Back</a>
+            <div class="card shadow ">
+                <div class="card-header">
+                    <h3>Edit Product</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/editProductPage/<%= product.id %>" enctype="multipart/form-data" method="POST">
+                        <div class="my-3">
+                            <label for="">Name</label>
+                            <input value="<%= product.name %>" class="form-control" type="text" name="name">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Regular Price</label>
+                            <input value="<%= product.regularPrice %>" class="form-control" type="text" name="regularPrice">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Sale Price</label>
+                            <input value="<%= product.salePrice %>" class="form-control" type="text" name="salePrice">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Stock</label>
+                            <input value="<%= product.stock %>" class="form-control" type="text" name="stock">
+                        </div>
+                       
+                        <div class="my-3">
+                            <input class="form-control w-50 d-inline-block " type="file" accept="image/png, image/jpeg" name="productPhoto">
+                        </div>
+                        <div class="my-2">
+                            <img class="w-25 object-fit-cover " src="/product/<%= product.photo %>" alt="">
+                        </div>
+                        <button class="btn btn-sm btn-primary ">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
